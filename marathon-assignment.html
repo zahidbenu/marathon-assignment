@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <!--===================================     MARATHON JS ASSIGNMENT     ====================================-->
+                                  <!------------ PRACTICAL PART ------------->
+
+  <script>
+
+    //Problem 1: Write a function to calculate the area of a triangle.
+    let base = 3;
+    let height = 5;
+    function area(base, height) {
+      return (base * height) / 2;
+    }
+    console.log(area(base, height));
+
+
+
+    //Problem 2: Write a function to convert degrees to radians.
+    let degrees = 45;
+    let radians = convert(degrees);
+    function convert(degrees) {
+      return degrees * (22 / 7) / 180; 
+    }
+    console.log(radians);
+
+
+
+    //Problem 3: Create a function calculateFactorial that takes a number and returns its factorial.
+    let number = 15;
+    function calculateFactorial(number) {
+      if (number === 0 || number === 1) {
+        return 1;
+      }
+
+      let factorial = 1;
+      for (let i = 2; i <= number; i++) {
+        factorial *= i;
+      }
+      return factorial;
+    }
+    console.log(calculateFactorial(number));
+
+
+
+    //Problem 4: Create a function isPrime that takes a number as a parameter and returns true 
+    //           if it's a prime number, and false otherwise.
+    function isPrime(number) {
+      if (number <= 1) {
+        return false;
+      }
+
+      for (let i = 2; i < number; i++) {
+        if (number % i === 0) {
+          return false;
+        }
+      }
+      
+      return true; 
+    }
+    console.log(isPrime(7));
+    console.log(isPrime(15));
+
+
+
+    // Problem 5: Create a function mergeArrays that takes two arrays as parameters and 
+    //            returns a new array that merges both arrays.
+    let array1 = [1, 2, 3, 4, 5];
+    let array2 = [6, 7, 8, 9, 10];
+    function mergeArrays(array1, array2) {
+      return array1.concat(array2);
+    }
+    console.log(mergeArrays(array1, array2)); 
+
+
+
+    //Problem 6: Create a function isLeapYear that takes a year as a parameter and returns "This is a leap year" 
+    //           if it's a leap year, and "Not Leap year" otherwise.
+    let year = 1993;
+    function isLeapYear(year) {
+      if ((year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0)) {
+        return "The year is leap year";
+      } else {
+        return "The year is not leap year";
+      }
+    }
+    console.log(isLeapYear(year)); 
+
+
+
+    //Problem 7: Create a function removeDuplicates that takes an array and returns a new array with duplicates removed.
+    let array = [1, 2, 3, 4, 4, 5, 5, 7, 12, 13, 13, 15];
+    function removeDuplicates(array) {
+      let newArray = [];
+      
+      for (let i = 0; i < array.length; i++) {
+        if (newArray.indexOf(array[i]) === -1) {
+          newArray.push(array[i]);
+        }
+      }
+      
+      return newArray;
+    }
+    console.log(removeDuplicates(array));
+
+
+
+    //Problem 8: Create a function convertToCelsius that takes a temperature in Fahrenheit and returns the 
+    //           equivalent temperature in Celsius.
+    let fahrenheit = 100;
+    function convertToCelsius(fahrenheit) {
+     return (fahrenheit - 32) * 5/9;
+    }
+    console.log(convertToCelsius(fahrenheit));
+
+
+
+    //Problem 9: Write a function to find the maximum of five numbers.
+    let fiveNumbers = (5, 10, 15, 3, 8);
+    function maxNumber(num1, num2, num3, num4, num5) {
+      let max = num1;
+
+      if (num2 > max) {
+        max = num2;
+      }
+      if (num3 > max) {
+        max = num3;
+      }
+      if (num4 > max) {
+        max = num4;
+      }
+      if (num5 > max) {
+        max = num5;
+      }
+
+      return max;
+    }
+    console.log(maxNumber(5, 10, 15, 3, 8));
+
+
+
+    //Problem 10: Create a function called evenOdd() that takes a string as a parameter. Now you have to give the 
+    //            output based on the total number of characters in your String. The output will be 'even' or 'odd'. 
+    //          [ Input: ‘JavaScript’ Output: even, Input: ‘Hello’ Output: odd]
+
+    function evenOdd(string) {
+      let length = string.length;
+
+      if (length % 2 === 0) {
+        return 'even';
+      } else {
+        return 'odd';
+      }
+    }
+    let string = 'JavaScript';
+    console.log(evenOdd(string)); 
+
+  </script>
+
+
+
+  <!--===================================    MARATHON JS ASSIGNMENT    ====================================-->
+                                   <!------------- THEORY PART ------------->
+
+
+
+                                     <!-- Answer to the question number 2 -->
+
+  What is JavaScript:
+  JavaScript is a programming language primarily used in web development. It enhance the interactivity and 
+  functionality of websites. It can be executed in web browsers and server side too.
+
+  primary purpose of js in web development:
+  1. Interactivity Purpose: 
+  Js allows to create dynamic and interactive web pages. It response on user actions like,
+              a.clicks, 
+              b.mouse movements,
+              c.keystrokes, 
+              d.features like dropdown menus, 
+              e. image sliders, 
+              f.form validation and so on.
+  
+  2.Document Object Model Purpose:
+  Js can be used to add, remove, or modify elements on a web page dynamically.
+
+  3.Data Validation Purpose:
+  Js is used for form validation, ensuring that user-submitted data is correct before it is sent to a server. 
+  It helps to improve data quality and user experience.
+
+  4.Asynchronous Operations Purpose:
+  Js helps to the operations such as making AJAX requests to fetch data from servers without reloading the 
+  entire page. It gives real-time updates and a smoother user experience.
+
+  5.Browser Compatibility Purpose:
+  Js is used to handle functionality and interactivity of the web pages in various web browsers.
+
+  There are several more purposes of using js in web development.
+
+   
+  
+                                      <!-- Answer to the question number 3 -->
+    
+  Differences among var, let, and const:
+  
+  1. var:
+     a. Only accessible within the function in which they are declared.
+     b. If declared outside of a function, it becomes global variables.
+     c. Allows redeclaration which can lead overwriting of variables.
+     d. It follows function scope but not block scope.
+
+  2. let:
+     a. Only accessible within the block scope or function in which they are declared.
+     b. It is not initialized until the declaration statement is executed.
+     c. Prevents redeclaration and allows to reassign the variable's value.
+     d. It follows block scope.
+
+  3. const:
+     a. Accessible within the block scope like the let.
+     b. Must be assigned a value at the time of declaration.
+     c. Cannot be reassigned once initialized.
+     d. It follows block scope.
+
+
+
+                                          <!-- Answer to the question number 4 -->
+       
+  Concept of Scope in JavaScript:
+  Scope implies the context where variables and functions are declared and accessed. It defines how variables 
+  and functions will be visible and accessible in programming. 
+  
+  Differences between Global scope and Local scope:
+
+  1. Global scope:
+    a. Variables and functions can be called from anywhere in the code.
+    b. Variables in global scope can be declared outside of any function or block.
+    c. Not limited to a specific function or block.
+    d. leads to naming conflicts and creates bug.
+
+  2. Local scope:
+    a. Variables and functions can be called within a function.
+    b. Variables in local scope can not be declared outside of any function or block.
+    c. Limited within that function and its nested functions.
+    d. Prevents naming conflicts and keeps code bug free.
+
+
+
+                                          <!-- Answer to the question number 5 -->
+
+  Differences between "null and "undefined":
+  
+  1.null:
+    a. Generally it is not any error but developer's intentional assignment.
+    b. Often use developers to represent that something has no value.
+    c. Used when need to clear or reset a variable.
+
+  2. undefined:
+    a. Shows when a variable has been declared but not assigned a value.
+    b. Shows when no return statement is provided.
+    c. Shows when any property in objects is missing.
+
+
+
+
+                                                       <!-- The End -->
+
+</body>
+</html>
