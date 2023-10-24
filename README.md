@@ -1,2 +1,2 @@
 # Marathon-Assignment
-Javascript assignment for marathon course of shikhun.net
+Javascript assignment for marathon course of shikhun.
